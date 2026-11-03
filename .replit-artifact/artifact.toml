@@ -1,0 +1,19 @@
+kind = "design-system"
+previewPath = "/altezza-design-system/"
+title = "Altezza Design System"
+description = "Sistema visual de Altezza para una experiencia B2B de bandeja unificada: superficies oscuras, señalización clara de prioridades y componentes operativos para centralizar conversaciones, responder con contexto y proteger oportunidades."
+version = "1.0.0"
+id = "design-system"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/altezza-design-system/" ]
+localPort = 18535
+
+[services.development]
+run = "pnpm --filter @workspace/altezza-design-system run dev"
+
+[services.env]
+PORT = "18535"
+BASE_PATH = "/altezza-design-system/"
